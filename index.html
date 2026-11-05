@@ -202,7 +202,13 @@ footer {
   <h2>聯絡我們</h2>
   <p>歡迎留下您的資料，我們將盡快與您聯繫。</p>
 
-  <form id="contactForm">
+ <form action="https://formsubmit.co/61113228@gm.chihlee.edu.tw" method="POST">
+
+  <input type="hidden" name="_subject" value="網站收到新的聯絡訊息">
+
+  <input type="hidden" name="_template" value="table">
+
+  <input type="text" name="_honey" style="display:none">
     <label>姓名</label>
     <input type="text" name="name" placeholder="請輸入姓名" required>
 
@@ -224,13 +230,7 @@ footer {
   <p>© 2026 創新科技有限公司 All Rights Reserved.</p>
 </footer>
 
-<script>
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-  document.getElementById("result").textContent =
-    "表單版面已完成，下一步將設定電子郵件寄送功能。";
-});
-</script>
+
 
 </body>
 </html>
